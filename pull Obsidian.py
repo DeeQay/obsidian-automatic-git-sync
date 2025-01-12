@@ -3,7 +3,7 @@
 import subprocess
 
 # Path to the repository
-repo_path = r'C:\Users\david\Documents\GitHub\Obsidian'
+repo_path = r'PathTo/Obsidian_notes_repo'
 
 def pull_repository():
     try:
