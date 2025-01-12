@@ -20,6 +20,7 @@ You can create a shortcut for the VBS script to make launching Obsidian easier:
 1. **Create a Shortcut** for the VBS file.
 2. Rename the shortcut to **Obsidian**.
 3. Change the icon of the shortcut to match Obsidian’s icon by selecting Obsidian.exe.
+4. (optional) Replace the shortcut in the Start menu with the new one, so that opening Obsidiana via Windows Search will also start the vbs file. (Path: "C:\ProgramData\Microsoft\Windows\Start Menu\Programs")
 
 ### Requirements
 
