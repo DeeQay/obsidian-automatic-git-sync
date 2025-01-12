@@ -3,9 +3,9 @@
 ' Custom variables
 ObsidianPath = """C:\Program Files\Obsidian\Obsidian.exe"""
 ObsidianExe = 'Obsidian.exe'
-PullScriptPath = """C:\Program Files\Obsidian\custom git push & pull scripts\pull Obsidian.py"""
-PushScriptPath = """C:\Program Files\Obsidian\custom git push & pull scripts\push Obsidian.py"""
-WaitTime = 10000 ' Wait time to check if Obsidian is running
+PullScriptPath = """pull Obsidian.py"""
+PushScriptPath = """push Obsidian.py"""
+WaitTime = 5000 ' 5 seconds wait time to check if Obsidian is running
 
 ' Start Obsidian
 Set WshShell = CreateObject("WScript.Shell")
