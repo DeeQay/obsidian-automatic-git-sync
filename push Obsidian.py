@@ -2,10 +2,10 @@
 
 import subprocess
 
-commit_msg = 'auto-commit David-Laptop'
+commit_msg = 'automatic commit'
 
 # Path to the repository
-repo_path = r'C:\Users\david\Documents\GitHub\Obsidian'
+repo_path = r'PathTo/Obsidian_notes_repo'
 
 def push_repository():
     try:
