@@ -10,12 +10,12 @@ Before using the script, make sure to change the paths to match the locations on
 'PathTo/Obsidian_notes_repo'
 ```
 
-### Step 3: Usage
+### Step 2: Usage
 
 **Just Run the VBS script** to **start Obsidian** and the latest changes from the repository will be automatically **pulled**.<br>
 **When Obsidian is closed**, the VBS script triggers the push script to **commit and push the changes to the repository**.
 
-### Step 4: Creating a Shortcut (Optional)
+### Step 3: Creating a Shortcut (Optional)
 You can create a shortcut for the VBS script to make launching Obsidian easier:
 1. **Create a Shortcut** for the VBS file.
 2. Rename the shortcut to **Obsidian**.
