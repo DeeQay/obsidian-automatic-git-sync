@@ -2,22 +2,13 @@
 
 Automates Git pull on Obsidian startup and push on shutdown, ensuring seamless synchronization of your Obsidian vault with Git.
 
-## Files
-
-1. **Obsidian Auto Pull and Push (VBS Script)**: This script automates the process of pulling changes from the repository when Obsidian starts and pushing changes when Obsidian is closed.
-2. **Python Pull Script**: This script pulls the latest changes from the Git repository.
-3. **Python Push Script**: This script adds, commits, and pushes changes to the Git repository.
-
 ## Instructions
 
-### Step 1: Modify the Paths
-Before using the scripts, make sure to change the paths to match the locations on your system. In all scripts, you will find paths like:
+### Step 1: Modify the Path
+Before using the script, make sure to change the paths to match the locations on your system:
 ```
 'PathTo/Obsidian_notes_repo'
 ```
-
-### Step 2: Python Files Location
-The two Python files must be in the same folder as the VBS script for it to work. If they are located elsewhere, you will need to provide the full path to the Python files in the VBS script.
 
 ### Step 3: Usage
 
@@ -32,5 +23,5 @@ You can create a shortcut for the VBS script to make launching Obsidian easier:
 
 ### Requirements
 
-- Make sure you have **Python** and **Git** installed on your system.
-- The scripts assume you have a Git repository set up with Obsidian.
+- **Git** installed on your system.
+- A cloned Git repository for Obsidian.
