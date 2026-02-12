@@ -16,11 +16,11 @@ WshShell.Run "cmd /c cd " & repoPath & " && git pull", 0, True
 
 ' Wait until Obsidian is closed
 Set objWMIService = GetObject("winmgmts:\\.\root\cimv2")
-Set colProcessList = objWMIService.ExecQuery("Select * from Win32_Process Where Name = '" & processName & "'")
+Set colProcessList = objWMIService.ExecQuery("Select ProcessId from Win32_Process Where Name = '" & processName & "'")
 
 Do While colProcessList.Count > 0
     WScript.Sleep WaitTime
-    Set colProcessList = objWMIService.ExecQuery("Select * from Win32_Process Where Name = '" & processName & "'")
+    Set colProcessList = objWMIService.ExecQuery("Select ProcessId from Win32_Process Where Name = '" & processName & "'")
 Loop
 
 ' Push repo when Obsidian is closed
