@@ -24,7 +24,18 @@ Loop
 
 ' Push repo when Obsidian is closed
 WshShell.Run "cmd /c cd " & repoPath & " && git add .", 0, True
-WshShell.Run "cmd /c cd " & repoPath & " && git commit -m """ & commitMsg & """", 0, True
+
+' Securely handle the commit message using a temporary file to avoid command injection
+Set fso = CreateObject("Scripting.FileSystemObject")
+tempFile = fso.GetSpecialFolder(2) & "\" & fso.GetTempName
+Set ts = fso.CreateTextFile(tempFile, True)
+ts.Write commitMsg
+ts.Close
+
+WshShell.Run "cmd /c cd " & repoPath & " && git commit -F """ & tempFile & """", 0, True
+
+If fso.FileExists(tempFile) Then fso.DeleteFile tempFile
+
 WshShell.Run "cmd /c cd " & repoPath & " && git push", 0, True
 
 WScript.Quit
